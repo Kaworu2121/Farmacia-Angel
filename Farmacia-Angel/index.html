@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacias del Ángel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Farmacias del Ángel</h1>
+    </header>
+    <nav>
+        <a href="#" class="active"><i class="fas fa-home"></i>Inicio</a>
+        <a href="#"><i class="fas fa-shipping-fast"></i>Pedidos</a>
+        <a href="#"><i class="fas fa-users"></i>Usuarios</a>
+        <a href="#"><i class="fas fa-pills"></i>Productos</a>
+        <a href="#"><i class="fas fa-tag"></i>Ofertas</a>
+        <a href="#"><i class="fas fa-registered"></i>Patente</a>
+        <a href="#"><i class="fas fa-leaf"></i>Droguería</a>
+    </nav>
+
+    <main>
+        <!-- Sección de Sucursales -->
+        <section class="seccion">
+            <h2 class="titulo-sucursales">Nuestras Sucursales</h2>
+            <div class="sucursales-grid">
+                <!-- Centella -->
+                <article class="sucursal">
+                    <h3>Centella</h3>
+                    <div class="mapa-container">
+                        <iframe src="https://maps.google.com/maps?q=Farmacia%20Centella&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                                class="mapa" 
+                                loading="lazy">
+                        </iframe>
+                        <img src="centella.jpg" alt="Sucursal Centella">
+                    </div>
+                    <div class="sucursal-info">
+                        <p><strong>Manzana 6C, Lote 2</strong><br>
+                        Valle de Luces, Iztapalapa<br>
+                        CDMX - 09800</p>
+                        <ul>
+                            <li>Inventario completo</li>
+                            <li>Surteo prioritario</li>
+                            <li>Asesoría médica</li>
+                        </ul>
+                    </div>
+                </article>
+        
+                <!-- Culhuacan -->
+                <article class="sucursal">
+                    <h3>Culhuacan</h3>
+                    <div class="mapa-container">
+                        <iframe src="MAP_URL_CULHUACAN" 
+                                class="mapa" 
+                                loading="lazy">
+                        </iframe>
+                        <img src="culhuacan.jpg" alt="Sucursal Culhuacan">
+                    </div>
+                    <div class="sucursal-info">
+                        <p><strong>Dirección Culhuacan</strong><br>
+                        Colonia, Delegación<br>
+                        CDMX - Código Postal</p>
+                        <ul>
+                            <li>Servicio 24 horas</li>
+                            <li>Entrega express</li>
+                            <li>Vacunación</li>
+                        </ul>
+                    </div>
+                </article>
+        
+                <!-- Ganaderos -->
+                <article class="sucursal">
+                    <h3>Ganaderos</h3>
+                    <div class="mapa-container">
+                        <iframe src="MAP_URL_GANADEROS" 
+                                class="mapa" 
+                                loading="lazy">
+                        </iframe>
+                        <img src="ganaderos.jpg" alt="Sucursal Ganaderos">
+                    </div>
+                    <div class="sucursal-info">
+                        <p><strong>Dirección Ganaderos</strong><br>
+                        Colonia, Delegación<br>
+                        CDMX - Código Postal</p>
+                        <ul>
+                            <li>Medicamentos especializados</li>
+                            <li>Servicio a empresas</li>
+                            <li>Estacionamiento gratuito</li>
+                        </ul>
+                    </div>
+                </article>
+        
+                <!-- La Curva -->
+                <article class="sucursal">
+                    <h3>La Curva</h3>
+                    <div class="mapa-container">
+                        <iframe src="MAP_URL_LA_CURVA" 
+                                class="mapa" 
+                                loading="lazy">
+                        </iframe>
+                        <img src="la-curva.jpg" alt="Sucursal La Curva">
+                    </div>
+                    <div class="sucursal-info">
+                        <p><strong>Dirección La Curva</strong><br>
+                        Colonia, Delegación<br>
+                        CDMX - Código Postal</p>
+                        <ul>
+                            <li>Área de nutrición</li>
+                            <li>Productos naturistas</li>
+                            <li>Promociones diarias</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Medicamentos -->
+        <section class="seccion">
+            <h2>Medicamentos Destacados</h2>
+            <div class="medicamentos-grid">
+                <article class="medicamento">
+                    <img src="ceftriaxona.jpg" alt="Ceftriaxona">
+                    <h3>Ceftriaxona</h3>
+                    <p>Antibiótico de amplio espectro</p>
+                </article>
+                <!-- Repetir para otros medicamentos -->
+            </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section class="seccion contacto">
+            <h2>Contacto</h2>
+            <form class="formulario">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="tel" placeholder="Teléfono">
+                <textarea placeholder="Mensaje" rows="5" required></textarea>
+                <label class="terminos">
+                    <input type="checkbox" required>
+                    Acepto términos y condiciones
+                </label>
+                <button type="submit">Enviar consulta</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="redes-sociales">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="info-footer">
+                <p>20 años sirviendo a Iztapalapa</p>
+                <p>Servicio a domicilio disponible</p>
+                <p class="derechos">© 2025 Farmacias del Ángel</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
